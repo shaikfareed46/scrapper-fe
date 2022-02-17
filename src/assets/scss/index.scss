@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.home {
+  .head-title {
+    display: flex;
+    flex-direction: row;
+    h1 {
+      margin-right: 5px
+    }
+    .add-new {
+     
+    }
+  }
+
+  .table {
+    .title {
+
+    }
+
+    table {
+      width: 100%;
+      background-color: #000;
+      border-spacing: 1px;
+      border-collapse: separate;
+      th, td {
+        background-color: #fff;
+        padding: 2px 6px;
+      }
+      th {
+        background-color: #ccc;
+        text-transform: uppercase;
+      }
+      td {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .pagination-container {
+    display: flex;
+    list-style: none;
+
+    .page{
+      padding: 10px;
+        border: 1px solid #dcdcdc;
+        border-radius: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .disabled{
+      .page{
+        cursor: not-allowed !important;
+      }
+    }
+    
+    .active{
+      border: 2px solid #000;
+        font-weight: bold;
+    }
+    
+    .previous{
+        padding: 10px;
+        border-radius: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .break{
+        padding: 10px;
+    }
+    
+    .next{
+        padding: 10px;
+        border-radius: 6px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+  }
+}
+
+@import "colors.scss";
+@import "variables.scss";
+@import "layout.scss";
+@import "components/inputs.scss";
+@import "components/buttons.scss";
